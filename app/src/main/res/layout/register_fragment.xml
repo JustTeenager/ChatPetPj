@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/photo1"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="180dp"
+                    android:src="@drawable/unnamed"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:scaleType="centerCrop"
+                    android:layout_height="180dp"/>
+                <ImageView
+                    android:id="@+id/photo2"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/unnamed"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/photo_demands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textColor="?attr/colorPrimaryDark"
+                android:text="@string/you_photo"/>
+
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/name_hint"/>
+
+    <EditText
+        android:id="@+id/surname_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/surname_hint"/>
+
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="@string/country_label"/>
+    <Spinner
+        android:id="@+id/country_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="@string/region_label"/>
+
+    <Spinner
+        android:id="@+id/region_reg_spinner"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/city_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/city_hint"/>
+    <Spinner
+        android:id="@+id/spinner_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/sex_for_spinner"
+        android:layout_margin="8dp"
+        />
+            <!--<EditText
+                android:id="@+id/age_reg_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_margin="8dp"
+                android:hint="@string/age_reg_hint"/>!-->
+   <!-- <Button
+        android:id="@+id/call_calendar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:background="@drawable/edit_button"
+        android:text="@string/date_birth"
+        android:textColor="@color/chat_text"
+        />!-->
+             <TextView
+        android:id="@+id/call_calendar_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:text="@string/date_birth"
+        android:textSize="16dp"
+        />
+
+    <EditText
+        android:id="@+id/email_reg_edit_text"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="3dp"
+        android:hint="@string/email_reg_hint"/>
+
+    <TextView
+        style="@android:style/TextAppearance.Small"
+        android:text="@string/verify_text"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/password_reg_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/pass_reg_hint"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/about_edit_text"
+        android:hint="@string/about_hint"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"/>
+   <!-- <TextView
+        android:id="@+id/rule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rule_and_policy"
+        android:textColor="?attr/colorPrimaryDark"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="8dp"/>!-->
+
+    <Button
+        android:id="@+id/registration_button"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/edit_button"
+        android:padding="8dp"
+        android:textColor="@color/chat_text"
+        android:text="@string/reg_button_text"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
